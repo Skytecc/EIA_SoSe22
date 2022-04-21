@@ -1,15 +1,39 @@
-header {
-    
+body {
 
 }
 
-body {
+.backgroundPic {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+}
+
+h1 {
+    color: aliceblue;
+    background-color: rgb(185, 184, 184);
+    text-shadow: 2px 2px rgb(83, 84, 87) ;
+    text-transform: uppercase;
+}
+
+#section02 {
+    margin-top: 350px;
+}
+
+ul li a:hover {
+    
+    color: white;
+    text-decoration: underline;
+    background-color: rgb(183, 183, 187);
+}
+
+li {
+    float: right;
+    top: auto;
     
 }
 
 ul {
-
-    background-color: rgb(92, 92, 92);
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -19,24 +43,57 @@ ul {
 
 li a {
     display: block;
-    color: rgb(255, 255, 255);
+    color: rgb(53, 53, 53);
     float: left;
     padding: 18px;
     text-align: center;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    
-
+    transition: box-shadow .3s;
     
 }
 
 
-#video01 {
+#audio01 {
+    display: block;
+}
 
+.überschrift2 {
+    text-align: center;
+}
+
+.überschrift3 {
+    text-align: center;
+}
+
+.überschrift4 {
+    margin-top: 50px;
+
+}
+
+#video01 {
+    padding-left: 640px;
     height: 400px;
+}
+
+p.gifInfo {
+    display: block;
+    background-color: rgb(135, 149, 211);
+    padding: 10px;
+}
+
+.gif01 {
+    height: 250px;
 }
 
 .sketches {
     height: 400px;
+    display: inline;
+}
+
+.charDesign {
+    display: inline-block;
+    height: 400px;
+        
 }
