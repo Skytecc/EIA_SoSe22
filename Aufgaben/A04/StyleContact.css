@@ -37,13 +37,3 @@ li a {
     height: 400px;
     z-index: -1;
 }
-
-.containerIntroduction {
-    margin-top: 400px;
-    margin-left: 33%;
-}
-
-.photo {
-    height: 250px;
-    margin-left: 33%;
-}
