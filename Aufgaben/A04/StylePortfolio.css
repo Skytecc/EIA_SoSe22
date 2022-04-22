@@ -13,7 +13,16 @@
 
 
 .logo {
+    display: block;
     height: 150px;
+    padding-left: 30%;
+    
+}
+
+.logo:hover {
+
+    
+    
 }
 
 .backgroundPic {
@@ -53,7 +62,7 @@ li {
 ul {
     list-style-type: none;
     margin: 0;
-    padding-right: 25%;
+    padding-right: 33%;
     overflow: hidden;
 }
 
