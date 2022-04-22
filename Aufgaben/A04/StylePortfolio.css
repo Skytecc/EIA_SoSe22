@@ -19,18 +19,25 @@ footer {
 
 .copyright {
     float: right;
-    margin-right: 25%;
-    margin-top: 50px;
-    font-size: 85%;
+    font-size: 50%;
+    padding-right: 150px;
 }
 
 .kontaktdaten {
-    
     height: 5px;
     font-size: 85%;
     
 }
 
+.containerIcons {
+    padding-top: 10px;
+    padding-left: 38%;
+}
+
+.icons {
+    height: 25px;
+    
+}
 
 
 .logo {
