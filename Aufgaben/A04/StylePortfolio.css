@@ -1,9 +1,19 @@
+.navContainer {
+    
+    
+
+}
+
 .container {
     width: 800px;
     margin: auto;
     padding: 10px;
-    
 
+}
+
+
+.logo {
+    height: 150px;
 }
 
 .backgroundPic {
@@ -21,7 +31,10 @@ h1 {
 }
 
 #section02 {
-    margin-top: 350px;
+    display: block;
+    width: 800px;
+    padding-top: 300px;
+    margin: auto;
 }
 
 ul li a:hover {
@@ -40,13 +53,12 @@ li {
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-right: 25%;
     overflow: hidden;
 }
 
 
 li a {
-    display: block;
     color: rgb(53, 53, 53);
     float: left;
     padding: 18px;
@@ -84,6 +96,7 @@ li a {
 p.gifInfo {
     display: block;
     background-color: rgb(135, 149, 211);
+    width: 35%;
     padding: 10px;
 }
 
