@@ -6,37 +6,30 @@
 
 }
 
-.containerFooter {
-    width: 800px;
-    margin: auto;
-}
-
 footer {
     background-color: #eaeaea;
-    width: 100%;
-    height: 150px;
+    margin: 0px -10px -10px -10px;
+    display: flex;
+    justify-content: space-between;
 }
-
-.copyright {
-    float: right;
-    font-size: 50%;
-    padding-right: 150px;
-}
-
 .kontaktdaten {
-    height: 5px;
-    font-size: 85%;
-    
+    font-size: small;
+    color: black;
+    padding: 10px 200px 0px 250px;
+    text-align: left;
 }
-
-.containerIcons {
-    padding-top: 10px;
-    padding-left: 38%;
-}
-
 .icons {
-    height: 25px;
-    
+    font-size: small;
+    color: black;
+    padding: 5px 0px 0px 0px;
+    text-align: center;
+    width: 25px;
+}
+.copyright {
+    font-size: small;
+    color: black;
+    padding: 5px 200px 0px 200px;
+    text-align: right;
 }
 
 
