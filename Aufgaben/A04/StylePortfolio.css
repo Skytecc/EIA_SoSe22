@@ -30,6 +30,7 @@ footer {
     color: black;
     padding: 5px 200px 0px 200px;
     text-align: right;
+    
 }
 
 
@@ -67,10 +68,16 @@ h1 {
     margin: auto;
 }
 
-ul li a:hover {
+li a:hover:not(.active) {
     
     color: white;
     text-decoration: underline;
+    background-color: rgb(183, 183, 187);
+}
+
+.active a {
+    text-decoration: underline;
+    color: white;
     background-color: rgb(183, 183, 187);
 }
 

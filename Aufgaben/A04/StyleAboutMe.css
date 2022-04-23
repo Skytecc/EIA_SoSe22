@@ -11,17 +11,17 @@
     
 }
 
-ul li a:hover {
+li a:hover:not(.active) {
     
     color: white;
     text-decoration: underline;
     background-color: rgb(183, 183, 187);
 }
 
-li {
-    float: right;
-    top: auto;
-    
+.active a {
+    text-decoration: underline;
+    color: white;
+    background-color: rgb(183, 183, 187);
 }
 
 ul {
@@ -34,7 +34,7 @@ ul {
 
 li a {
     color: rgb(53, 53, 53);
-    float: left;
+    float: right;
     padding: 18px;
     text-align: center;
     text-decoration: none;

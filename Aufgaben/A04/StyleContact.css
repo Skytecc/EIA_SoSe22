@@ -11,10 +11,16 @@
     
 }
 
-#navBar ul li a:hover {
+#navBar li a:hover:not(.active) {
     
     color: white;
     text-decoration: underline;
+    background-color: rgb(183, 183, 187);
+}
+
+#navBar .active a {
+    text-decoration: underline;
+    color: white;
     background-color: rgb(183, 183, 187);
 }
 
