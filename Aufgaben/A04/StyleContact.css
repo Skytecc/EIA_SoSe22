@@ -51,6 +51,14 @@ li a {
     z-index: -1;
 }
 
+.yourMessage {
+    display: block;
+    height: 250px;
+    width:  400px;
+    text-align: left;
+    vertical-align: text-top;
+}
+
 .containerFooter {
     width: 800px;
     margin: auto;
