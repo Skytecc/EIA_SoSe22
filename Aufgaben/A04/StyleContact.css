@@ -11,20 +11,20 @@
     
 }
 
-ul li a:hover {
+#navBar ul li a:hover {
     
     color: white;
     text-decoration: underline;
     background-color: rgb(183, 183, 187);
 }
 
-li {
+#navBar li {
     float: right;
     top: auto;
     
 }
 
-ul {
+#navBar ul {
     list-style-type: none;
     margin: 0;
     padding-right: 33%;
@@ -32,7 +32,7 @@ ul {
 }
 
 
-li a {
+#navBar li a {
     color: rgb(53, 53, 53);
     float: left;
     padding: 18px;
@@ -51,12 +51,74 @@ li a {
     z-index: -1;
 }
 
-.yourMessage {
+#containerMessage {
+    margin-top: 200px;
+}
+
+#message ul {
+    float: left;
     display: block;
-    height: 250px;
-    width:  400px;
-    text-align: left;
-    vertical-align: text-top;
+    margin: 0 auto;
+    width: 30%;
+}
+
+#message ul li {
+    margin-bottom: 15px;
+    list-style-type: none;
+}
+
+
+#message ul h2 {
+    display: inline-block;
+    font-size: 20px;
+}
+
+#message ul a {
+    display: inline-block;
+    color: #fff;
+	margin: 5px 0 0 63%;
+	background-color: #afc1ff;
+	padding: 10px 15px 10px 15px;
+	border-radius: 5px;
+	border-bottom: 3px solid #6f8fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+#message li input[type=text]{
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: none;
+    background-color: rgb(65, 65, 65)   
+}
+
+#message input {
+    width: 500px;
+    height: 50px;
+}
+
+#message textarea {
+    width: 500px;
+    height: auto;
+    background-color: rgb(65, 65, 65);
+}
+
+#message li :placeholder-shown {
+    color: white;
+    
+}
+
+#message li input[type=send] {
+    background-color: rgb(65, 65, 65);
+} 
+
+#message li input[type=send] :placeholder-shown {
+    color: white;
+}
+
+.yourMessage {
+    height: 150px;
 }
 
 .containerFooter {
@@ -68,6 +130,7 @@ footer {
     background-color: #eaeaea;
     width: 100%;
     height: 150px;
+    margin-top: 40%;
 }
 
 
