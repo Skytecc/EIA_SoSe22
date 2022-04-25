@@ -1,3 +1,11 @@
+#mainContainer {
+    width: 800px;
+    margin: auto;
+    
+}
+
+
+
 .logo {
     display: block;
     height: 150px;
