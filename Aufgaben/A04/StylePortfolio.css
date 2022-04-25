@@ -3,12 +3,11 @@
     width: 800px;
     margin: auto;
     padding: 10px;
-
 }
 
 #header {
     width: 800;
-    margin 0;
+    margin: 0;
 }
 
 footer {
@@ -48,15 +47,18 @@ footer {
 
 .logo:hover {
 
-    content: url(my_material/Logo/Skytecc\ Logo\ 02.svg);
+    content: url("my_material/Logo/Skytecc\ Logo\ 02.svg");
     
 }
 
 .backgroundPic {
+    background-image: url("my_material/Design/Light\ and\ Shadow\ Übung.jpg");
     position: absolute;
     width: 100%;
-    margin: 0;
     height: 400px;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: auto;
     z-index: -1;
 }
 
