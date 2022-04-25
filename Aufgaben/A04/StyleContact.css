@@ -1,7 +1,7 @@
 #mainContainer {
     width: 800px;
     margin: auto;
-    
+
 }
 
 
@@ -138,37 +138,36 @@
     height: 150px;
 }
 
-.containerFooter {
-    width: 800px;
-    margin: auto;
-}
 
 footer {
     background-color: #eaeaea;
-    width: 100%;
-    height: 150px;
-    margin-top: 40%;
 }
 
-
-.copyright {
-    float: right;
-    font-size: 50%;
-    padding-right: 150px;
+.flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 .kontaktdaten {
-    height: 5px;
-    font-size: 85%;
-    
+    font-size: small;
+    color: black;
+    text-align: left;
+}
+.icons {
+    font-size: small;
+    color: black;
+    text-align: center;
+    height: 25px;
 }
 
 .containerIcons {
-    padding-top: 10px;
-    padding-left: 38%;
+    width: 110px;
 }
 
-.icons {
-    height: 25px;
+.copyright {
+    font-size: small;
+    color: black;
+    text-align: right;
     
 }
+

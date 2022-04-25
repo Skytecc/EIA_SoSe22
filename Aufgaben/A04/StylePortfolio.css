@@ -2,7 +2,6 @@
 .container {
     width: 800px;
     margin: auto;
-    padding: 10px;
 }
 
 #header {
@@ -12,27 +11,32 @@
 
 footer {
     background-color: #eaeaea;
-    margin: 0px -10px -10px -10px;
+}
+
+.flex {
     display: flex;
     justify-content: space-between;
 }
+
 .kontaktdaten {
     font-size: small;
     color: black;
-    padding: 10px 200px 0px 250px;
     text-align: left;
 }
 .icons {
     font-size: small;
     color: black;
-    padding: 5px 0px 0px 0px;
     text-align: center;
-    width: 25px;
+    height: 25px;
 }
+
+.containerIcons {
+    width: 110px;
+}
+
 .copyright {
     font-size: small;
     color: black;
-    padding: 5px 200px 0px 200px;
     text-align: right;
     
 }
@@ -52,13 +56,14 @@ footer {
 }
 
 .backgroundPic {
-    background-image: url("my_material/Design/Light\ and\ Shadow\ Übung.jpg");
+    background-image: url("my_material/Design/Glow\ Übung.jpg");
     position: absolute;
     width: 100%;
     height: 400px;
     margin: 0;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
+    background-position: 0% 65%;
     z-index: -1;
 }
 
