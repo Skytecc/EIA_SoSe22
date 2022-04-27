@@ -3,63 +3,6 @@
     margin: auto;
 }
 
-.logo {
-    display: block;
-    height: 150px;
-    padding-left: 30%;
-    
-}
-
-.logo:hover {
-
-    content: url(my_material/Logo/Skytecc\ Logo\ 02.svg);
-    
-}
-
-li a:hover:not(.active) {
-    
-    color: white;
-    text-decoration: underline;
-    background-color: rgb(183, 183, 187);
-}
-
-.active a {
-    text-decoration: underline;
-    color: white;
-    background-color: rgb(183, 183, 187);
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding-right: 33%;
-    overflow: hidden;
-}
-
-
-li a {
-    color: rgb(53, 53, 53);
-    float: right;
-    padding: 18px;
-    text-align: center;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    transition: box-shadow .3s;
-    
-}
-
-.backgroundPic {
-    background-image: url("my_material/Design/Glow\ Übung.jpg");
-    position: absolute;
-    width: 100%;
-    height: 400px;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0% 65%;
-    z-index: -1;
-}
 
 .containerIntroduction {
     margin-top: 400px;
@@ -71,34 +14,3 @@ li a {
     margin-left: 33%;
 }
 
-footer {
-    background-color: #eaeaea;
-}
-
-.flex {
-    display: flex;
-    justify-content: space-between;
-}
-
-.kontaktdaten {
-    font-size: small;
-    color: black;
-    text-align: left;
-}
-.icons {
-    font-size: small;
-    color: black;
-    text-align: center;
-    height: 25px;
-}
-
-.containerIcons {
-    width: 110px;
-}
-
-.copyright {
-    font-size: small;
-    color: black;
-    text-align: right;
-    
-}
