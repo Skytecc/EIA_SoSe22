@@ -1,0 +1,16 @@
+.container {
+    width: 800px;
+    margin: auto;
+}
+
+
+.containerIntroduction {
+    margin-top: 400px;
+    margin-left: 33%;
+}
+
+.photo {
+    height: 250px;
+    margin-left: 33%;
+}
+

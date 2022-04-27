@@ -1,0 +1,68 @@
+
+.container {
+    width: 800px;
+    margin: auto;
+}
+
+
+
+
+h1 {
+    color: aliceblue;
+    background-color: rgb(185, 184, 184);
+    text-shadow: 2px 2px rgb(83, 84, 87) ;
+    text-transform: uppercase;
+}
+
+#section02 {
+    display: block;
+    width: 800px;
+    padding-top: 300px;
+    margin: auto;
+}
+
+#audio01 {
+    display: block;
+}
+
+.überschrift2 {
+    text-align: center;
+}
+
+.überschrift3 {
+    text-align: center;
+}
+
+.überschrift4 {
+    margin-top: 50px;
+
+}
+
+#video01 {
+    
+    height: 400px;
+}
+
+p.gifInfo {
+    display: block;
+    background-color: rgb(135, 149, 211);
+    width: 35%;
+    padding: 10px;
+}
+
+.gif01 {
+    height: 250px;
+}
+
+.sketches {
+    height: 250px;
+    display: block;
+    
+    
+}
+
+.charDesign {
+    display: inline-block;
+    height: 250px;
+        
+}
