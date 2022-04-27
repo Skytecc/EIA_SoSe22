@@ -1,7 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+p, h1 ,h3 {
+    font-family: "Lato", sans-serif;
+}
+
+#banner {
+    background: rgb(134, 134, 134);
+    display: block;
+    padding: 10px 120px;
+    position: fixed;
+    margin-left: 77%;
+}
+
+#banner .inhalt {
+    position: relative;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    color: white;
+}
+
 .logo {
     display: block;
     height: 150px;
     padding-left: 30%;
+
     
 }
 
@@ -54,6 +78,11 @@ li a {
     background-size: cover;
     background-position: 0% 65%;
     z-index: -1;
+
+    animation-name: slider;
+    animation-duration: 5s;
+    
+
 }
 
 footer {
@@ -69,12 +98,18 @@ footer {
     font-size: small;
     color: black;
     text-align: left;
+    font-family: 'Lato', sans-serif;
 }
 .icons {
     font-size: small;
     color: black;
     text-align: center;
     height: 25px;
+    opacity: 25%;
+}
+
+.icons:hover {
+    opacity: 100%;
 }
 
 .containerIcons {

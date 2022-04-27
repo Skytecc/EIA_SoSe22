@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 
 .container {
     width: 800px;
@@ -53,9 +55,24 @@ p.gifInfo {
 
 
 .sketches {
-    height: 10px;
+    width: 800px;
+    height: 150px;
     display: block;
+    transition: transform  0.5s;
 }
+
+.sketches:hover {
+    transform: scale(1.1);
+    width: 600px;
+    height: 300px;
+    padding-left: 12.5%;
+}
+
+.sketches:not(.sketches:hover) {
+    opacity: 50%;
+    transition: opacity 0.5s;
+}
+
 
 .charDesign {
     display: inline-block;
