@@ -55,10 +55,10 @@ p.gifInfo {
 }
 
 .sketches {
-    height: 250px;
-    display: block;
-    
-    
+    margin: auto;
+    width: 800px;
+    margin-bottom: 40px;
+    height: auto;  
 }
 
 .charDesign {

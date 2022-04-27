@@ -4,9 +4,6 @@
     margin: auto;
 }
 
-
-
-
 h1 {
     color: aliceblue;
     background-color: rgb(185, 184, 184);
@@ -54,11 +51,10 @@ p.gifInfo {
     height: 250px;
 }
 
+
 .sketches {
-    height: 250px;
+    height: 10px;
     display: block;
-    
-    
 }
 
 .charDesign {
