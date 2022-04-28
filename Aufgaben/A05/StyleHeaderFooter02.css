@@ -86,21 +86,19 @@ li a {
 
     animation-name: slider;
     animation-iteration-count: infinite;
-    animation-duration: 15s;
+    animation-duration: 10s;
     animation-delay: 2s;
 }
 
 @keyframes slider {
 
-    0%      { transition: opacity 2s ; opacity: 1; }  
-	11.11%  { transition: opacity 2s; opacity: 0; }
+    0%      { transition: opacity 2s ; opacity: 1;}  
+	11.11%  { transition: opacity 2s; opacity: 0;}
     33.33%  { transition: opacity 2s; opacity: 1; background-image: url("my_material/Design/Light\ and\ Shadow\ Übung.jpg"); } 
 	44.44%  { transition: opacity 2s; opacity: 0; }
     66.66%  { transition: opacity 2s; opacity: 1; background-image: url("my_material/Design/2D\ Graphic\ test\ Background\ 1\ blue.jpg"); background-position: 0% 50%; }
     77.77%  { transition: opacity 2s; opacity: 0; }
 } 
-
-
 
 footer {
     background-color: #eaeaea;
