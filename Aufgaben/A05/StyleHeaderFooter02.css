@@ -82,20 +82,18 @@ li a {
     animation-name: slider;
     animation-iteration-count: infinite;
     animation-duration: 15s;
-    animation-delay: 5s;
+    animation-delay: 2s;
 }
 
-/* @keyframes slider {
+@keyframes slider {
 
-    0%      { opacity: 1; }  
-	11.11%  { opacity: 0; }
-    33.33%  { opacity: 1; background-image: url("my_material/Design/Light\ and\ Shadow\ Übung.jpg"); } 
-	44.44%  { opacity: 0; }
-    66.66%  { opacity: 1; background-image: url("my_material/Design/Idea\ Conception\ small.jpg"); }
-    77.77%  { opacity: 0; }
-
-
-} */
+    0%      { transition: opacity 2s ; opacity: 1; }  
+	11.11%  { transition: opacity 2s; opacity: 0; }
+    33.33%  { transition: opacity 2s; opacity: 1; background-image: url("my_material/Design/Light\ and\ Shadow\ Übung.jpg"); } 
+	44.44%  { transition: opacity 2s; opacity: 0; }
+    66.66%  { transition: opacity 2s; opacity: 1; background-image: url("my_material/Design/2D\ Graphic\ test\ Background\ 1\ blue.jpg"); background-position: 0% 50%; }
+    77.77%  { transition: opacity 2s; opacity: 0; }
+} 
 
 
 footer {
