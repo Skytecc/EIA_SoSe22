@@ -4,6 +4,13 @@ p, h1 ,h3 {
     font-family: "Lato", sans-serif;
 }
 
+
+@media only screen and (max-width: 800px) {
+    .header {
+        width: 100%;
+    }
+}
+
 #banner {
     background: rgb(31, 31, 31);
     display: block;
@@ -98,7 +105,7 @@ li a {
 	44.44%  { transition: opacity 2s; opacity: 0; }
     66.66%  { transition: opacity 2s; opacity: 1; background-image: url("my_material/Design/2D\ Graphic\ test\ Background\ 1\ blue.jpg"); background-position: 0% 50%; }
     77.77%  { transition: opacity 2s; opacity: 0; }
-} 
+}
 
 footer {
     background-color: #eaeaea;
