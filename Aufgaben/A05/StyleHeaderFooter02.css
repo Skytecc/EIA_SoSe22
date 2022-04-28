@@ -19,7 +19,6 @@ p, h1 ,h3 {
 
     top: 30px;
     right: -120px;
-    transform: rotate(45deg);
      transform: rotate(45deg);
      z-index: 99999;
 }
