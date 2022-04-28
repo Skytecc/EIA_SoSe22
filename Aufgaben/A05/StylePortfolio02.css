@@ -70,7 +70,7 @@ p.gifInfo {
 }
 
 .sketchContainer:hover .sketches {
-    opacity: 0.5;
+    opacity: 0.3;
     transition: opacity 0.5s;
 }
 
