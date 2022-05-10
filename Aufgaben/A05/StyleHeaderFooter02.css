@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+@font-face {
+    font-family: Swera Demo Shadowed;
+    src: url("my_material/Fonts/Swera\ Shadowed\ Demo.otf");
+}
+
 p, h1 ,h3 {
     font-family: "Lato", sans-serif;
 }
