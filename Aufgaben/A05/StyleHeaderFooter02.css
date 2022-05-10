@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 @font-face {
-    font-family: Swera Demo Shadowed;
+    font-family: "Swera Demo Shadowed";
     src: url("my_material/Fonts/Swera\ Shadowed\ Demo.otf");
 }
 
@@ -47,6 +47,8 @@ p, h1 ,h3 {
     display: block;
     height: 150px;
     padding-left: 30%;
+    font-family: "Swera Demo Shadowed";
+
 
     
 }
@@ -54,6 +56,8 @@ p, h1 ,h3 {
 .logo:hover {
 
     content: url("my_material/Logo/Skytecc\ Logo\ 03.svg");
+    font-family: "Swera Demo Shadowed";
+
     
 }
 
