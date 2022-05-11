@@ -12,7 +12,7 @@ var grWR = Math.round((germany2022 / germany2014 - 1) * 100);
 var grWRnr = germany2022 - germany2014;
 var frEU = Math.round((france2022 / eu2022) * 100);
 var frWR = Math.round((france2022 / france2014 - 1) * 100);
-var frWRnr = france2022 - france2022;
+var frWRnr = france2022 - france2014;
 var itEU = Math.round((italy2022 / eu2022) * 100);
 var itWR = Math.round((italy2022 / italy2014 - 1) * 100);
 var itWRnr = italy2022 - italy2014;
@@ -35,4 +35,37 @@ console.log("Die Einwohnerzahl von Schweden in 2022: " + sweden2022);
 console.log("Die relative Gesamtzahl von Schweden zur EU ist: " + swEU + "%");
 console.log("Schweden Wachstumsrate seit 2014: " + swWR + "%");
 console.log("Schweden gesamte Wachstumsrate zwischen 2014 und 2022: " + swWRnr);
+// 07 Aufgabe
+// Deutschland
+function changeNumberGR() {
+    document.querySelector(".einwohnerGS").innerHTML = germany2022.toString() + "Mio";
+    document.querySelector(".vglEU").innerHTML = grEU.toString() + "%";
+    document.querySelector(".wr2014").innerHTML = grWR.toString() + "%";
+    document.querySelector(".wrDifference").innerHTML = grWRnr.toString() + "Mio";
+}
+document.querySelector(".germany").addEventListener('click', changeNumberGR);
+// Frankreich
+function changeNumberFR() {
+    document.querySelector(".einwohnerGS").innerHTML = france2022.toString() + "Mio";
+    document.querySelector(".vglEU").innerHTML = frEU.toString() + "%";
+    document.querySelector(".wr2014").innerHTML = frWR.toString() + "%";
+    document.querySelector(".wrDifference").innerHTML = frWRnr.toString() + "Mio";
+}
+document.querySelector(".france").addEventListener('click', changeNumberFR);
+// Italien
+function changeNumberIT() {
+    document.querySelector(".einwohnerGS").innerHTML = italy2022.toString() + "Mio";
+    document.querySelector(".vglEU").innerHTML = itEU.toString() + "%";
+    document.querySelector(".wr2014").innerHTML = itWR.toString() + "%";
+    document.querySelector(".wrDifference").innerHTML = itWRnr.toString() + "Mio";
+}
+document.querySelector(".italy").addEventListener('click', changeNumberIT);
+// Schweden
+function changeNumberSWE() {
+    document.querySelector(".einwohnerGS").innerHTML = sweden2022.toString() + "Mio";
+    document.querySelector(".vglEU").innerHTML = swEU.toString() + "%";
+    document.querySelector(".wr2014").innerHTML = swWR.toString() + "%";
+    document.querySelector(".wrDifference").innerHTML = swWRnr.toString() + "Mio";
+}
+document.querySelector(".sweden").addEventListener('click', changeNumberSWE);
 //# sourceMappingURL=script02.js.map
