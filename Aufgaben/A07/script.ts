@@ -12,21 +12,22 @@ var sweden2014 : number = 9.65;
 
 var eu2022 : number = 447.1;
 
-var grEU : number = (germany2022%eu2022) * 100;
-var grWR : number = (germany2022%germany2014 - 1) * 100;
+var grEU : number = (germany2022/eu2022) * 100;
+var grWR : number = (germany2022/germany2014 - 1) * 100;
 var grWRnr : number = germany2022-germany2014;
 
-var frEU : number = (france2022%eu2022) * 100;
-var frWR : number = (france2022%france2014 -1) * 100;
+var frEU : number = (france2022/eu2022) * 100;
+var frWR : number = (france2022/france2014 -1) * 100;
 var frWRnr : number = france2022-france2022;
 
-var itEU : number = (italy2022%eu2022) * 100;
-var itWR : number = (italy2022%italy2014 -1) * 100;
+var itEU : number = (italy2022/eu2022) * 100;
+var itWR : number = (italy2022/italy2014 -1) * 100;
 var itWRnr : number = italy2022-italy2014;
 
-var swEU : number = (sweden2022%eu2022) * 100;
-var swWR : number = (sweden2022%sweden2014 -1) *100;
+var swEU : number = (sweden2022/eu2022) * 100;
+var swWR : number = (sweden2022/sweden2014 -1) *100;
 var swWRnr : number = sweden2022-sweden2014;
+
 
 console.log("Die Einwohnerzahl von Deutschland in 2022: " + germany2022 );
 console.log("Die relative Gesamtzahl von Deutschland zur EU ist: " + grEU + "%" );
