@@ -31,51 +31,20 @@ var swWR : number = Math.round((sweden2022/sweden2014 -1) *100);
 var swWRnr : number = sweden2022-sweden2014;
 // 07 Aufgabe
 
-// Deutschland
-function changeNumberGR() {
-    document.querySelector(".einwohnerGS").innerHTML = germany2022.toString() + "Mio";
-    document.querySelector(".vglEU").innerHTML = grEU.toString() + "%";
-    document.querySelector(".wr2014").innerHTML = grWR.toString() + "%";
-    document.querySelector(".wrDifference").innerHTML = grWRnr.toString() + "Mio";
+function changeNumber(number2022:number, numberEU:number,numberWR:number, numberWRnr:number) {
+    document.querySelector(".einwohnerGS").innerHTML = number2022.toString() + "Mio";
+    document.querySelector(".vglEU").innerHTML = numberEU.toString() + "%";
+    document.querySelector(".wr2014").innerHTML = numberWR.toString() + "%";
+    document.querySelector(".wrDifference").innerHTML = numberWRnr.toString() + "Mio";
+    document.querySelector(".chart").setAttribute("style", "height:" + numberEU + "%");
 }
 
-
-document.querySelector(".germany").addEventListener('click', changeNumberGR);
-
-
-// Frankreich
-function changeNumberFR() {
-    document.querySelector(".einwohnerGS").innerHTML = france2022.toString() + "Mio";
-    document.querySelector(".vglEU").innerHTML = frEU.toString() + "%";
-    document.querySelector(".wr2014").innerHTML = frWR.toString() + "%";
-    document.querySelector(".wrDifference").innerHTML = frWRnr.toString() + "Mio";
-    document.querySelector(".chart").setAttribute("style", "height:" + 13 + "%");
-}
-
-document.querySelector(".france").addEventListener('click', changeNumberFR);
-
-// Italien
-function changeNumberIT() {
-    document.querySelector(".einwohnerGS").innerHTML = italy2022.toString() + "Mio";
-    document.querySelector(".vglEU").innerHTML = itEU.toString() + "%";
-    document.querySelector(".wr2014").innerHTML = itWR.toString() + "%";
-    document.querySelector(".wrDifference").innerHTML = itWRnr.toString() + "Mio";
-}
-
-document.querySelector(".italy").addEventListener('click', changeNumberIT);
-
-
-// Schweden
-
-function changeNumberSWE() {
-    document.querySelector(".einwohnerGS").innerHTML = sweden2022.toString() + "Mio";
-    document.querySelector(".vglEU").innerHTML = swEU.toString() + "%";
-    document.querySelector(".wr2014").innerHTML = swWR.toString() + "%";
-    document.querySelector(".wrDifference").innerHTML = swWRnr.toString() + "Mio";
-}
-
-document.querySelector(".sweden").addEventListener('click', changeNumberSWE);
-
+window.addEventListener("load", function() {
+    document.querySelector(".germany").addEventListener("click",function() { changeNumber (germany2022, grEU, grWR, grWRnr)} );
+    document.querySelector(".france").addEventListener("click",function() { changeNumber (france2022, frEU, frWR, frWRnr)} );
+    document.querySelector(".italy").addEventListener("click",function() { changeNumber (italy2022, itEU, itWR, itWRnr)} );
+    document.querySelector(".sweden").addEventListener("click",function() { changeNumber (sweden2022, swEU, swWR, swWRnr)} );
+})
 
 // EU Sterne
 
@@ -84,5 +53,8 @@ function changeNumberEU() {
 }
     document.querySelector(".stars").addEventListener('click', changeNumberEU);
 
-//chart
+
+
+
+
 
