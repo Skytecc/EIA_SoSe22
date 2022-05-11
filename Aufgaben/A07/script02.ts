@@ -29,27 +29,6 @@ var itWRnr : number = italy2022-italy2014;
 var swEU : number = Math.round((sweden2022/eu2022) * 100);
 var swWR : number = Math.round((sweden2022/sweden2014 -1) *100);
 var swWRnr : number = sweden2022-sweden2014;
-
-console.log("Die Einwohnerzahl von Deutschland in 2022: " + germany2022 );
-console.log("Die relative Gesamtzahl von Deutschland zur EU ist: " + grEU + "%" );
-console.log("Deutschlands Wachstumsrate seit 2014: " + grWR + "%");
-console.log("Deutschlands gesamte Wachstumsrate zwischen 2014 und 2022: " + grWRnr);
-
-console.log("Die Einwohnerzahl von Frankreich in 2022: " + france2022 );
-console.log("Die relative Gesamtzahl von Frankreich zur EU ist: " + frEU + "%" );
-console.log("Frankreich Wachstumsrate seit 2014: " + frWR + "%" );
-console.log("Frankreich gesamte Wachstumsrate zwischen 2014 und 2022: " + frWRnr);
-
-console.log("Die Einwohnerzahl von Italien in 2022: " + italy2022 );
-console.log("Die relative Gesamtzahl von Italien zur EU ist: " + itEU + "%" );
-console.log("Italien Wachstumsrate seit 2014: " + itWR + "%" );
-console.log("Italien gesamte Wachstumsrate zwischen 2014 und 2022: " + itWRnr);
-
-console.log("Die Einwohnerzahl von Schweden in 2022: " + sweden2022 );
-console.log("Die relative Gesamtzahl von Schweden zur EU ist: " + swEU + "%" );
-console.log("Schweden Wachstumsrate seit 2014: " + swWR + "%" );
-console.log("Schweden gesamte Wachstumsrate zwischen 2014 und 2022: " + swWRnr);
-
 // 07 Aufgabe
 
 // Deutschland
