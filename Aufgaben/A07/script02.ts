@@ -39,7 +39,9 @@ function changeNumberGR() {
     document.querySelector(".wrDifference").innerHTML = grWRnr.toString() + "Mio";
 }
 
+
 document.querySelector(".germany").addEventListener('click', changeNumberGR);
+
 
 // Frankreich
 function changeNumberFR() {
@@ -47,6 +49,7 @@ function changeNumberFR() {
     document.querySelector(".vglEU").innerHTML = frEU.toString() + "%";
     document.querySelector(".wr2014").innerHTML = frWR.toString() + "%";
     document.querySelector(".wrDifference").innerHTML = frWRnr.toString() + "Mio";
+    document.querySelector(".chart").setAttribute("style", "height:" + 13 + "%");
 }
 
 document.querySelector(".france").addEventListener('click', changeNumberFR);
@@ -61,6 +64,7 @@ function changeNumberIT() {
 
 document.querySelector(".italy").addEventListener('click', changeNumberIT);
 
+
 // Schweden
 
 function changeNumberSWE() {
@@ -72,10 +76,13 @@ function changeNumberSWE() {
 
 document.querySelector(".sweden").addEventListener('click', changeNumberSWE);
 
+
 // EU Sterne
 
 function changeNumberEU() {
     document.querySelector(".euZahl").innerHTML = "Einwohnerzahl in der europäischen Union: " + eu2022.toString() + "Mio";
 }
+    document.querySelector(".stars").addEventListener('click', changeNumberEU);
 
-document.querySelector(".stars").addEventListener('click', changeNumberEU);
+//chart
+
