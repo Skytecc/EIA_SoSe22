@@ -16,20 +16,29 @@ var eu2022 : number = 447.1;
 
 var grEU : number = Math.round((germany2022/eu2022) * 100);
 var grWR : number = Math.round((germany2022/germany2014 - 1) * 100);
-var grWRnr : number = germany2022-germany2014;
+var grWRnr : number = Math.round(germany2022-germany2014);
 
 var frEU : number = Math.round((france2022/eu2022) * 100);
 var frWR : number = Math.round((france2022/france2014 -1) * 100);
-var frWRnr : number = france2022-france2014;
+var frWRnr : number = Math.round(france2022-france2014);
 
 var itEU : number = Math.round((italy2022/eu2022) * 100);
 var itWR : number = Math.round((italy2022/italy2014 -1) * 100);
-var itWRnr : number = italy2022-italy2014;
+var itWRnr : number = Math.round(italy2022-italy2014);
 
 var swEU : number = Math.round((sweden2022/eu2022) * 100);
 var swWR : number = Math.round((sweden2022/sweden2014 -1) *100);
-var swWRnr : number = sweden2022-sweden2014;
+var swWRnr : number = Math.round(sweden2022-sweden2014);
+
+
 // 07 Aufgabe
+
+
+// EU Sterne
+
+function changeNumberEU() {
+    document.querySelector(".euZahl").innerHTML = "Einwohnerzahl in der europäischen Union: " + eu2022.toString() + "Mio";
+}
 
 function changeNumber(number2022:number, numberEU:number,numberWR:number, numberWRnr:number) {
     document.querySelector(".einwohnerGS").innerHTML = number2022.toString() + "Mio";
@@ -44,15 +53,14 @@ window.addEventListener("load", function() {
     document.querySelector(".france").addEventListener("click",function() { changeNumber (france2022, frEU, frWR, frWRnr)} );
     document.querySelector(".italy").addEventListener("click",function() { changeNumber (italy2022, itEU, itWR, itWRnr)} );
     document.querySelector(".sweden").addEventListener("click",function() { changeNumber (sweden2022, swEU, swWR, swWRnr)} );
+    document.querySelector(".stars").addEventListener('click', changeNumberEU); 
+
 })
 
-// EU Sterne
 
-function changeNumberEU() {
-    document.querySelector(".euZahl").innerHTML = "Einwohnerzahl in der europäischen Union: " + eu2022.toString() + "Mio";
-}
-    document.querySelector(".stars").addEventListener('click', changeNumberEU);
 
+
+    
 
 
 
