@@ -92,3 +92,11 @@ function changeNumberSWE() {
 }
 
 document.querySelector(".sweden").addEventListener('click', changeNumberSWE);
+
+// EU Sterne
+
+function changeNumberEU() {
+    document.querySelector(".euZahl").innerHTML = "Einwohnerzahl in der europäischen Union: " + eu2022.toString() + "Mio";
+}
+
+document.querySelector(".stars").addEventListener('click', changeNumberEU);
