@@ -1,11 +1,30 @@
+body {
+    background-color: black;
+}
+
+.drumpad {
+    position: relative;
+    margin: auto;
+    width: 500px;
+    height: 500px;  /* Box größe reiht die automatisch in 3 Reihen. bsp. 80px zu klein für automatische Reihen*/
+}
+
 .button {
-    border: 1px;
-    color: black;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    height: 150px;
+    width: 150px;
     margin: 4px 2px;
-    cursor: pointer;
+}
+
+.buttonR1 {
+    background-image: linear-gradient(#3d94f5, #2268d5);
+}
+
+.buttonR2 {
+    background-image: linear-gradient(#ff57ae, #f00a81);
+}
+
+.buttonR3 {
+    background-image: linear-gradient(#f5a23c, #c76702);
 }
