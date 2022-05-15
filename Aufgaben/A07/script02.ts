@@ -54,7 +54,7 @@ function changeNumber(number2022:number, numberEU:number,numberWR:number, number
     document.querySelector(".wrDifference").innerHTML = numberWRnr.toString() + "Mio";
     document.querySelector(".chart").setAttribute("style", "height:" + numberEU + "%");
     document.querySelector(land).classList.add("active");
-
+    
 }
 
     document.querySelector(".germany").addEventListener("click",function() { changeNumber (germany2022, grEU, grWR, grWRnr, ger)} );
