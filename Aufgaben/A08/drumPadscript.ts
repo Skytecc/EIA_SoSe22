@@ -14,7 +14,7 @@
     sound.play();
   }
 
-
+  
 window.addEventListener("load", function() {
     document.querySelector(".button1").addEventListener("click", function() {soundSample (sounds[0])} );
     document.querySelector(".button2").addEventListener("click", function() {soundSample (sounds[1])} );
