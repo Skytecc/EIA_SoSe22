@@ -24,7 +24,9 @@ window.addEventListener("load", function () {
     document.querySelector(".playButton").addEventListener("click", function playBeats() {
         setInterval(function () {
             sounds[5].play();
-        }), 1;
+            sounds[8].play();
+            sounds[4].play();
+        }), 500;
     });
 });
 //# sourceMappingURL=drumPadscript.js.map

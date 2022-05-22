@@ -29,7 +29,9 @@ window.addEventListener("load", function() {
       setInterval(function() {
       
         sounds[5].play();
+        sounds[8].play();
+        sounds[4].play();
      
        
-     }), 1;})
+     }), 500;})
   });
