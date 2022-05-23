@@ -7,6 +7,7 @@ var sound06 = new Audio('DrumPadSounds02/kick.mp3');
 var sound07 = new Audio('DrumPadSounds02/laugh-1.mp3');
 var sound08 = new Audio('DrumPadSounds02/laugh-2.mp3');
 var sound09 = new Audio('DrumPadSounds02/snare.mp3');
+var playBtn = this.document.querySelector(".playButton");
 var sounds = [sound01, sound02, sound03, sound04, sound05, sound06, sound07, sound08, sound09];
 function soundSample02(sound) {
     sound.play();
@@ -28,5 +29,16 @@ window.addEventListener("load", function () {
             sounds[4].play();
         }), 500;
     });
+});
+playBtn.addEventListener('click', function () {
+    if (playBtn.getAttribute('class') == 'playButton') {
+        playBtn.setAttribute('class', 'active');
+    }
+    else if (playBtn.getAttribute('class') == 'active') {
+        playBtn.setAttribute('class', 'pause');
+    }
+    else if (playBtn.getAttribute('class') == 'pause') {
+        playBtn.setAttribute('class', 'active');
+    }
 });
 //# sourceMappingURL=drumPadscript02.js.map

@@ -7,6 +7,7 @@
   var sound07:HTMLAudioElement = new Audio('DrumPadSounds02/laugh-1.mp3');
   var sound08:HTMLAudioElement = new Audio('DrumPadSounds02/laugh-2.mp3');
   var sound09:HTMLAudioElement = new Audio('DrumPadSounds02/snare.mp3');
+  var playBtn:HTMLElement = this.document.querySelector(".playButton");
 
   var sounds:HTMLAudioElement [] = [sound01, sound02, sound03, sound04, sound05, sound06, sound07, sound08, sound09];
 
@@ -25,6 +26,9 @@ window.addEventListener("load", function() {
     document.querySelector(".button8").addEventListener("click", function() {soundSample02 (sounds[7])} );
     document.querySelector(".button9").addEventListener("click", function() {soundSample02 (sounds[8])} );
     
+
+  
+    
     document.querySelector(".playButton").addEventListener("click", function playBeats () { 
       setInterval(function() {
       
@@ -35,3 +39,24 @@ window.addEventListener("load", function() {
        
      }), 500;})
   });
+
+
+  playBtn.addEventListener('click', function(){
+    if(playBtn.getAttribute('class') == 'playButton') {
+      playBtn.setAttribute('class', 'active');
+    }
+
+    else if(playBtn.getAttribute('class') == 'active') {
+      playBtn.setAttribute('class', 'pause');
+      
+    }
+
+    else if(playBtn.getAttribute('class') == 'pause') {
+      playBtn.setAttribute('class', 'active');
+    }
+  })
+
+
+
+ 
+  
