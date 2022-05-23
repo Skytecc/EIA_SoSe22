@@ -1,12 +1,12 @@
-  var sound01:HTMLAudioElement = new Audio('DrumPadSounds/A.mp3');
-  var sound02:HTMLAudioElement = new Audio('DrumPadSounds/C.mp3');
-  var sound03:HTMLAudioElement = new Audio('DrumPadSounds/F.mp3');
-  var sound04:HTMLAudioElement = new Audio('DrumPadSounds/G.mp3');
-  var sound05:HTMLAudioElement = new Audio('DrumPadSounds/hihat.mp3');
-  var sound06:HTMLAudioElement = new Audio('DrumPadSounds/kick.mp3');
-  var sound07:HTMLAudioElement = new Audio('DrumPadSounds/laugh-1.mp3');
-  var sound08:HTMLAudioElement = new Audio('DrumPadSounds/laugh-2.mp3');
-  var sound09:HTMLAudioElement = new Audio('DrumPadSounds/snare.mp3');
+  var sound01:HTMLAudioElement = new Audio('DrumPadSounds02/A.mp3');
+  var sound02:HTMLAudioElement = new Audio('DrumPadSounds02/C.mp3');
+  var sound03:HTMLAudioElement = new Audio('DrumPadSounds02/F.mp3');
+  var sound04:HTMLAudioElement = new Audio('DrumPadSounds02/G.mp3');
+  var sound05:HTMLAudioElement = new Audio('DrumPadSounds02/hihat.mp3');
+  var sound06:HTMLAudioElement = new Audio('DrumPadSounds02/kick.mp3');
+  var sound07:HTMLAudioElement = new Audio('DrumPadSounds02/laugh-1.mp3');
+  var sound08:HTMLAudioElement = new Audio('DrumPadSounds02/laugh-2.mp3');
+  var sound09:HTMLAudioElement = new Audio('DrumPadSounds02/snare.mp3');
 
   var sounds:HTMLAudioElement [] = [sound01, sound02, sound03, sound04, sound05, sound06, sound07, sound08, sound09];
 
