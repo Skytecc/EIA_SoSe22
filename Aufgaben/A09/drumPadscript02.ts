@@ -13,6 +13,11 @@
   function soundSample (sound:HTMLAudioElement) {
     sound.play();
   }
+
+  function stopSound (sound:HTMLAudioElement) {
+    sound.pause();
+    sound.currentTime = 0;
+  }
   
 window.addEventListener("load", function() {
     document.querySelector(".button1").addEventListener("click", function() {soundSample (sounds[0])} );
@@ -25,12 +30,12 @@ window.addEventListener("load", function() {
     document.querySelector(".button8").addEventListener("click", function() {soundSample (sounds[7])} );
     document.querySelector(".button9").addEventListener("click", function() {soundSample (sounds[8])} );
 
-     function beatSounds () { setInterval(function(){
+     function beatSounds () { setInterval(function playSound(){
 
         soundSample (sounds[5]);
         soundSample (sounds[8]);
         soundSample (sounds[4]);
-
+        
        },100);
      }
 

@@ -11,6 +11,10 @@ var sounds = [sound01, sound02, sound03, sound04, sound05, sound06, sound07, sou
 function soundSample(sound) {
     sound.play();
 }
+function stopSound(sound) {
+    sound.pause();
+    sound.currentTime = 0;
+}
 window.addEventListener("load", function () {
     document.querySelector(".button1").addEventListener("click", function () { soundSample(sounds[0]); });
     document.querySelector(".button2").addEventListener("click", function () { soundSample(sounds[1]); });
@@ -22,7 +26,7 @@ window.addEventListener("load", function () {
     document.querySelector(".button8").addEventListener("click", function () { soundSample(sounds[7]); });
     document.querySelector(".button9").addEventListener("click", function () { soundSample(sounds[8]); });
     function beatSounds() {
-        setInterval(function () {
+        setInterval(function playSound() {
             soundSample(sounds[5]);
             soundSample(sounds[8]);
             soundSample(sounds[4]);
