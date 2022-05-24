@@ -21,17 +21,24 @@ window.addEventListener("load", function () {
     document.querySelector(".button7").addEventListener("click", function () { soundSample(sounds[6]); });
     document.querySelector(".button8").addEventListener("click", function () { soundSample(sounds[7]); });
     document.querySelector(".button9").addEventListener("click", function () { soundSample(sounds[8]); });
-    document.querySelector(".playButton").addEventListener("click", function playBeats() {
+    document.querySelector(".btn").addEventListener("click", function playBeats() {
         setInterval(function () {
-            sounds[5].play();
-            sounds[8].play();
-            sounds[4].play();
+            soundSample(sounds[5]);
+            soundSample(sounds[8]);
+            soundSample(sounds[4]);
         }), 500;
     });
-    var playBtn = this.document.querySelector(".playButton");
+    var playBtn = document.querySelector("fa-play");
+    var stopBtn = document.querySelector("fa-stop");
     playBtn.addEventListener('click', function () {
-        if (playBtn.getAttribute('class') == "playButton") {
+        if (playBtn.getAttribute('class') == "fa-play") {
+            playBtn.setAttribute('class', 'fa-stop');
+        }
+        else if (playBtn.getAttribute('class') == "active") {
             playBtn.setAttribute('class', 'stop');
+        }
+        else if (playBtn.getAttribute('class') == "stop") {
+            playBtn.setAttribute('class', 'active');
         }
     });
 });

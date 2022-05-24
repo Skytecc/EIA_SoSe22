@@ -2,9 +2,11 @@ body {
     background-color: black;
 }
 
-.playButton {
+.btn {
     position: relative;
-    left: 45%;
+    left: 42%;
+    color: white;
+    font-size: 110px;
 }
 
 .drumpad {
