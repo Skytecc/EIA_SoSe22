@@ -24,29 +24,44 @@ window.addEventListener("load", function() {
     document.querySelector(".button7").addEventListener("click", function() {soundSample (sounds[6])} );
     document.querySelector(".button8").addEventListener("click", function() {soundSample (sounds[7])} );
     document.querySelector(".button9").addEventListener("click", function() {soundSample (sounds[8])} );
-    
-    document.querySelector(".btn").addEventListener("click", function playBeats () { 
-      setInterval(function() {
-      
+
+     function beatSounds () { setInterval(function(){
+
         soundSample (sounds[5]);
         soundSample (sounds[8]);
         soundSample (sounds[4]);
 
-     
-     }), 500;})
+       },100);
+     }
 
-     var playBtn:HTMLElement = document.querySelector("fa-play");
-     var stopBtn:HTMLElement = document.querySelector("fa-stop");
+    document.querySelector(".btn").addEventListener("click", beatSounds);
 
-     playBtn.addEventListener('click', function(){
-       if(playBtn.getAttribute('class') == "fa-play") {
-         playBtn.setAttribute('class', 'fa-stop');
-       } else if(playBtn.getAttribute('class') == "active") {
-        playBtn.setAttribute('class', 'stop');
-       } else if(playBtn.getAttribute('class') == "stop") {
-        playBtn.setAttribute('class', 'active');
-       }
-     })
+
+     var playBtn:HTMLElement = document.querySelector(".btn");
+    
+     const playIconClassName = "fa-play";
+     const stopIconClassName = "fa-stop";
+     const remixIconClassName = "fa-compact-disc";
+
+     var btns = document.querySelectorAll(".btn")
+
+
+     function onChange (change) {
+
+      const buttonName = change.currentTarget;
+
+      const isPlayButton = buttonName.classList.contains(playIconClassName);
+
+      if (isPlayButton) {
+        buttonName.classList.remove(playIconClassName);
+        buttonName.classList.add(stopIconClassName);
+      } else {
+        buttonName.classList.remove(stopIconClassName);
+        buttonName.classList.add(playIconClassName);
+      }
+    }
+
+    document.querySelector(".btn").addEventListener("click", onChange);
 
 
   });
