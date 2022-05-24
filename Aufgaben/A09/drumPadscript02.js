@@ -7,7 +7,6 @@ var sound06 = new Audio('DrumPadSounds02/kick.mp3');
 var sound07 = new Audio('DrumPadSounds02/laugh-1.mp3');
 var sound08 = new Audio('DrumPadSounds02/laugh-2.mp3');
 var sound09 = new Audio('DrumPadSounds02/snare.mp3');
-var playBtn = this.document.querySelector(".playButton");
 var sounds = [sound01, sound02, sound03, sound04, sound05, sound06, sound07, sound08, sound09];
 function soundSample02(sound) {
     sound.play();
@@ -30,6 +29,7 @@ window.addEventListener("load", function () {
         }), 500;
     });
 });
+var playBtn = document.querySelector('.playButton');
 playBtn.addEventListener('click', function () {
     if (playBtn.getAttribute('class') == 'playButton') {
         playBtn.setAttribute('class', 'active');
