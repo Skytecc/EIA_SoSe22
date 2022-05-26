@@ -11,10 +11,6 @@ var sounds = [sound01, sound02, sound03, sound04, sound05, sound06, sound07, sou
 function soundSample(sound) {
     sound.play();
 }
-function stopSound(sound) {
-    sound.pause();
-    sound.currentTime = 0;
-}
 window.addEventListener("load", function () {
     document.querySelector(".button1").addEventListener("click", function () { soundSample(sounds[0]); });
     document.querySelector(".button2").addEventListener("click", function () { soundSample(sounds[1]); });
@@ -25,18 +21,23 @@ window.addEventListener("load", function () {
     document.querySelector(".button7").addEventListener("click", function () { soundSample(sounds[6]); });
     document.querySelector(".button8").addEventListener("click", function () { soundSample(sounds[7]); });
     document.querySelector(".button9").addEventListener("click", function () { soundSample(sounds[8]); });
-    function beatSounds() {
-        setInterval(function playSound() {
-            soundSample(sounds[5]);
-            soundSample(sounds[8]);
-            soundSample(sounds[4]);
-        }, 100);
-    }
-    document.querySelector(".btn").addEventListener("click", beatSounds);
+    /* function beatSounds () {
+      setInterval(function(){
+  
+        soundSample (sounds[5]);
+       },1000);
+  
+      setInterval(function() {
+        soundSample (sounds[8]);
+      }, 5000)
+  
+      setInterval(function(){
+        soundSample (sounds[4])
+      }, 8000)
+     }*/
     var playBtn = document.querySelector(".btn");
     const playIconClassName = "fa-play";
     const stopIconClassName = "fa-stop";
-    const remixIconClassName = "fa-compact-disc";
     var btns = document.querySelectorAll(".btn");
     function onChange(change) {
         const buttonName = change.currentTarget;
@@ -51,5 +52,26 @@ window.addEventListener("load", function () {
         }
     }
     document.querySelector(".btn").addEventListener("click", onChange);
+    var beat = [sound06, sound09, sound05];
+    var index = 0;
+    function beatSounds() {
+        var loop = setInterval(function () {
+            soundSample(beat[index]);
+            index += 1;
+            if (index > 2)
+                index = 0;
+            document.querySelector(".fa-stop").addEventListener("click", function () {
+                clearInterval(loop);
+            });
+        }, 700);
+    }
+    ;
+    document.querySelector(".fa-play").addEventListener("click", beatSounds);
+    document.querySelector("#remix").addEventListener("click", function () {
+        setInterval(function () {
+            let randomSound = Math.floor(Math.random() * sounds.length);
+            soundSample(sounds[randomSound]);
+        }, 700);
+    });
 });
 //# sourceMappingURL=drumPadscript02.js.map
