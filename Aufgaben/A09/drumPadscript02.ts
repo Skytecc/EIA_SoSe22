@@ -14,16 +14,16 @@ function soundSample(sound: HTMLAudioElement) {
   sound.play();
 }
 
-window.addEventListener("load", function () {
-  document.querySelector(".button1").addEventListener("click", function () { soundSample(sounds[0]) });
-  document.querySelector(".button2").addEventListener("click", function () { soundSample(sounds[1]) });
-  document.querySelector(".button3").addEventListener("click", function () { soundSample(sounds[2]) });
-  document.querySelector(".button4").addEventListener("click", function () { soundSample(sounds[3]) });
-  document.querySelector(".button5").addEventListener("click", function () { soundSample(sounds[4]) });
-  document.querySelector(".button6").addEventListener("click", function () { soundSample(sounds[5]) });
-  document.querySelector(".button7").addEventListener("click", function () { soundSample(sounds[6]) });
-  document.querySelector(".button8").addEventListener("click", function () { soundSample(sounds[7]) });
-  document.querySelector(".button9").addEventListener("click", function () { soundSample(sounds[8]) });
+window.addEventListener("load", function (): void {
+  document.querySelector(".button1").addEventListener("click", function (): void { soundSample(sounds[0]) });
+  document.querySelector(".button2").addEventListener("click", function (): void { soundSample(sounds[1]) });
+  document.querySelector(".button3").addEventListener("click", function (): void { soundSample(sounds[2]) });
+  document.querySelector(".button4").addEventListener("click", function (): void { soundSample(sounds[3]) });
+  document.querySelector(".button5").addEventListener("click", function (): void { soundSample(sounds[4]) });
+  document.querySelector(".button6").addEventListener("click", function (): void { soundSample(sounds[5]) });
+  document.querySelector(".button7").addEventListener("click", function (): void { soundSample(sounds[6]) });
+  document.querySelector(".button8").addEventListener("click", function (): void { soundSample(sounds[7]) });
+  document.querySelector(".button9").addEventListener("click", function (): void { soundSample(sounds[8]) });
 
   /* function beatSounds () { 
     setInterval(function(){
@@ -73,13 +73,13 @@ window.addEventListener("load", function () {
 
 
   function beatSounds() {
-    var loop: number = setInterval(function () {
+    var loop: number = setInterval(function (): void {
       soundSample(beat[index]);
       index += 1;
       if (index > 2)
         index = 0;
 
-      document.querySelector(".fa-stop").addEventListener("click", function () {
+      document.querySelector(".fa-stop").addEventListener("click", function (): void {
         clearInterval(loop);
       });
     }, 700)
@@ -88,16 +88,32 @@ window.addEventListener("load", function () {
   document.querySelector(".fa-play").addEventListener("click", beatSounds);
 
 
-  document.querySelector("#remix").addEventListener("click", function () {
-    setInterval(function () {
+ /*  document.querySelector("#remix").addEventListener("click", function (): void {
+    var stopRemix = setInterval(function (): void {
       
       let randomSound = Math.floor(Math.random() * sounds.length);
 
       soundSample(sounds[randomSound]);
 
-    }, 700)
-  });
+      
 
+    }, 700)
+  });*/
+
+  function randomizer(array) {
+    let currentIndex = array.length, randomIndex;
+
+    while (currentIndex != 0) {
+      randomIndex = Math.floor(Math.random() * currentIndex)
+
+      currentIndex--;
+
+      [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+    }
+    return array;
+  }
+
+  document.querySelector("#remix").addEventListener("click", randomizer(sounds));
 
 
 });
