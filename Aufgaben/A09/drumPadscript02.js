@@ -25,19 +25,14 @@ window.addEventListener("load", function () {
     const playIconClassName = "fa-play";
     const stopIconClassName = "fa-stop";
     var btns = document.querySelectorAll(".btn");
-    function onChange(change) {
-        const buttonName = change.currentTarget;
-        const isPlayButton = buttonName.classList.contains(playIconClassName);
-        if (isPlayButton) {
-            buttonName.classList.remove(playIconClassName);
-            buttonName.classList.add(stopIconClassName);
-        }
-        else {
-            buttonName.classList.remove(stopIconClassName);
-            buttonName.classList.add(playIconClassName);
-        }
-    }
-    document.querySelector(".btn").addEventListener("click", onChange);
+    document.querySelector("#play").addEventListener("click", function () {
+        document.querySelector("#play").classList.add("hidden");
+        document.querySelector("#stop").classList.remove("hidden");
+    });
+    document.querySelector("#stop").addEventListener("click", function () {
+        document.querySelector("#stop").classList.add("hidden");
+        document.querySelector("#play").classList.remove("hidden");
+    });
     var beat = [sound06, sound09, sound05];
     var index = 0;
     function beatSounds() {
@@ -51,7 +46,6 @@ window.addEventListener("load", function () {
             clearInterval(loop);
         });
     }
-    ;
     document.querySelector(".fa-play").addEventListener("click", beatSounds);
     function randomizer(array) {
         let currentIndex = array.length, randomIndex;
@@ -62,6 +56,7 @@ window.addEventListener("load", function () {
         }
         return array;
     }
+    ;
     document.querySelector("#remix").addEventListener("click", randomizer(sounds));
 });
 //# sourceMappingURL=drumPadscript02.js.map

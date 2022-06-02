@@ -33,23 +33,16 @@ window.addEventListener("load", function (): void {
   var btns = document.querySelectorAll(".btn")
 
 
-  function onChange(change) {
+  
+    document.querySelector("#play").addEventListener("click", function () {
+      document.querySelector("#play").classList.add("hidden");
+      document.querySelector("#stop").classList.remove("hidden");
+    })
 
-    const buttonName = change.currentTarget;
-
-    const isPlayButton = buttonName.classList.contains(playIconClassName);
-
-    if (isPlayButton) {
-      buttonName.classList.remove(playIconClassName);
-      buttonName.classList.add(stopIconClassName);
-    } else {
-      buttonName.classList.remove(stopIconClassName);
-      buttonName.classList.add(playIconClassName);
-
-    }
-  }
-
-  document.querySelector(".btn").addEventListener("click", onChange);
+    document.querySelector("#stop").addEventListener("click", function () {
+      document.querySelector("#stop").classList.add("hidden");
+      document.querySelector("#play").classList.remove("hidden");
+    })
 
   var beat: HTMLAudioElement[] = [sound06, sound09, sound05];
 
@@ -68,7 +61,7 @@ window.addEventListener("load", function (): void {
       clearInterval(loop);
     });
 
-  };
+  }
 
   document.querySelector(".fa-play").addEventListener("click", beatSounds);
 
@@ -83,7 +76,7 @@ window.addEventListener("load", function (): void {
       [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
     }
     return array;
-  }
+  };
 
   document.querySelector("#remix").addEventListener("click", randomizer(sounds));
 
