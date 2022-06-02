@@ -76,7 +76,7 @@ window.addEventListener("load", function (): void {
       [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
     }
     return array;
-  };
+  }
 
   document.querySelector("#remix").addEventListener("click", randomizer(sounds));
 

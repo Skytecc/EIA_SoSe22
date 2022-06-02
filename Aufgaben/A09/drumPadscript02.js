@@ -56,7 +56,6 @@ window.addEventListener("load", function () {
         }
         return array;
     }
-    ;
     document.querySelector("#remix").addEventListener("click", randomizer(sounds));
 });
 //# sourceMappingURL=drumPadscript02.js.map
