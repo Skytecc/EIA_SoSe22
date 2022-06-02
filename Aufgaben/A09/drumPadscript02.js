@@ -21,20 +21,6 @@ window.addEventListener("load", function () {
     document.querySelector(".button7").addEventListener("click", function () { soundSample(sounds[6]); });
     document.querySelector(".button8").addEventListener("click", function () { soundSample(sounds[7]); });
     document.querySelector(".button9").addEventListener("click", function () { soundSample(sounds[8]); });
-    /* function beatSounds () {
-      setInterval(function(){
-  
-        soundSample (sounds[5]);
-       },1000);
-  
-      setInterval(function() {
-        soundSample (sounds[8]);
-      }, 5000)
-  
-      setInterval(function(){
-        soundSample (sounds[4])
-      }, 8000)
-     }*/
     var playBtn = document.querySelector(".btn");
     const playIconClassName = "fa-play";
     const stopIconClassName = "fa-stop";
@@ -60,24 +46,13 @@ window.addEventListener("load", function () {
             index += 1;
             if (index > 2)
                 index = 0;
-            document.querySelector(".fa-stop").addEventListener("click", function () {
-                clearInterval(loop);
-            });
         }, 700);
+        document.querySelector(".fa-stop").addEventListener("click", function () {
+            clearInterval(loop);
+        });
     }
     ;
     document.querySelector(".fa-play").addEventListener("click", beatSounds);
-    /*  document.querySelector("#remix").addEventListener("click", function (): void {
-       var stopRemix = setInterval(function (): void {
-         
-         let randomSound = Math.floor(Math.random() * sounds.length);
-   
-         soundSample(sounds[randomSound]);
-   
-         
-   
-       }, 700)
-     });*/
     function randomizer(array) {
         let currentIndex = array.length, randomIndex;
         while (currentIndex != 0) {

@@ -25,22 +25,6 @@ window.addEventListener("load", function (): void {
   document.querySelector(".button8").addEventListener("click", function (): void { soundSample(sounds[7]) });
   document.querySelector(".button9").addEventListener("click", function (): void { soundSample(sounds[8]) });
 
-  /* function beatSounds () { 
-    setInterval(function(){
-
-      soundSample (sounds[5]);
-     },1000);
-
-    setInterval(function() {
-      soundSample (sounds[8]);
-    }, 5000)
-
-    setInterval(function(){
-      soundSample (sounds[4])
-    }, 8000) 
-   }*/
-
-
   var playBtn: HTMLElement = document.querySelector(".btn");
 
   const playIconClassName = "fa-play";
@@ -78,27 +62,15 @@ window.addEventListener("load", function (): void {
       index += 1;
       if (index > 2)
         index = 0;
-
-      document.querySelector(".fa-stop").addEventListener("click", function (): void {
-        clearInterval(loop);
-      });
     }, 700)
+
+    document.querySelector(".fa-stop").addEventListener("click", function (): void {
+      clearInterval(loop);
+    });
+
   };
 
   document.querySelector(".fa-play").addEventListener("click", beatSounds);
-
-
- /*  document.querySelector("#remix").addEventListener("click", function (): void {
-    var stopRemix = setInterval(function (): void {
-      
-      let randomSound = Math.floor(Math.random() * sounds.length);
-
-      soundSample(sounds[randomSound]);
-
-      
-
-    }, 700)
-  });*/
 
   function randomizer(array) {
     let currentIndex = array.length, randomIndex;
