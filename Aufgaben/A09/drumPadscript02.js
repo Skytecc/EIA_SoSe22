@@ -67,11 +67,26 @@ window.addEventListener("load", function () {
     }
     ;
     document.querySelector(".fa-play").addEventListener("click", beatSounds);
-    document.querySelector("#remix").addEventListener("click", function () {
-        setInterval(function () {
-            let randomSound = Math.floor(Math.random() * sounds.length);
-            soundSample(sounds[randomSound]);
-        }, 700);
-    });
+    /*  document.querySelector("#remix").addEventListener("click", function (): void {
+       var stopRemix = setInterval(function (): void {
+         
+         let randomSound = Math.floor(Math.random() * sounds.length);
+   
+         soundSample(sounds[randomSound]);
+   
+         
+   
+       }, 700)
+     });*/
+    function randomizer(array) {
+        let currentIndex = array.length, randomIndex;
+        while (currentIndex != 0) {
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex--;
+            [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+        }
+        return array;
+    }
+    document.querySelector("#remix").addEventListener("click", randomizer(sounds));
 });
 //# sourceMappingURL=drumPadscript02.js.map
