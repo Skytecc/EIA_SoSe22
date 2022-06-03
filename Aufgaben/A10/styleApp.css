@@ -47,6 +47,12 @@ ul li {
     
 }
 
-
-
+#myInput {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 450px;
+    outline: none;
+    font-size: 20px;
+}
   
