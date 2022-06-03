@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+.app {
+    position: relative;
+    margin-left: 20%;
+    margin-top: 50px;
+}
+
+body {
+    background-color: #eee;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: "Lato", sans-serif;
+}
+
+li {
+    font-family: "Lato", sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: 35%;
+    box-shadow: 0px 4px rgb(177, 170, 170);
+    list-style-type: none;
+    
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: white;
+    font-size: 18px;
+    transition: 0.2s;
+    border: 1px outset rgb(214, 214, 214);
+    border-left: hidden;
+    border-right: hidden;
+    
+}
+
+.checkContainer {
+    display: block;
+    position: relative;
+    padding-right: 50px;
+    margin: auto;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.checkContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+.checkContainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkContainer .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border-width: 0 3px 3px 0;
+    border: solid black;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
