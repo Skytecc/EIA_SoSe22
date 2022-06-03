@@ -83,12 +83,12 @@ ul li {
 }
 
 .checkContainer .checkmark:after {
-    left: 9px;
-    top: 5px;
+    left: 10px;
+    top: 6px;
     width: 5px;
     height: 10px;
-    border-width: 0 3px 3px 0;
     border: solid black;
+    border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
