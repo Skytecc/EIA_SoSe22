@@ -12,8 +12,8 @@ body {
     
 }
 
-* {
-    box-sizing: border-box;
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
 h2 {
@@ -22,6 +22,7 @@ h2 {
 
 li {
     font-family: "Lato", sans-serif;
+    position: relative;
 }
 
 ul {
@@ -46,50 +47,6 @@ ul li {
     
 }
 
-.checkContainer {
-    display: block;
-    position: relative;
-    padding-right: 50px;
-    margin: auto;
-    cursor: pointer;
-    font-size: 22px;
-}
 
-.checkContainer input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
 
-.checkmark {
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    background-color: #eee;
-    border-radius: 50%;
-    border: 1px solid black;
-}
-
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-
-.checkContainer input:checked ~ .checkmark:after {
-    display: block;
-}
-
-.checkContainer .checkmark:after {
-    left: 10px;
-    top: 6px;
-    width: 5px;
-    height: 10px;
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
+  
