@@ -36,7 +36,6 @@ taskInput.addEventListener("keyup", e => {
         var test = document.querySelector<HTMLElement>(".li");
         test.style.display="none";
     }
-
  
     document.querySelector(".icon").addEventListener("click", myTest);
 });
