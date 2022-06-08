@@ -47,7 +47,11 @@ ul li {
     
 }
 
-#myInput {
+ul li:checked {
+    text-decoration: line-through;
+}
+
+#newInput {
     margin: 0;
     border: none;
     border-radius: 0;
@@ -56,4 +60,15 @@ ul li {
     outline: none;
     font-size: 20px;
 }
+
+.fas {
+    margin-left: 90%;
+}
+
+.fas:hover {
+    color: rgb(196, 34, 34);
+    transform: scale(1.2);
+}
+
+
   

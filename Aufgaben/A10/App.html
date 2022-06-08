@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
 
     <link rel="stylesheet" href="styleApp.css">
     <script src="scriptApp.js" defer></script>
@@ -21,15 +23,15 @@
         <div class="totalnumber"></div>
     </div>
     
-    <div><input type="text" id="myInput" placeholder="Add another task" </div>
+    <div> <input type="text" id="newInput" placeholder="Add another task"> </div>
     
     <ul id="appList">
-        <li> <input type="checkbox" name="todo" value="todo"> <span class="checkmark"></span>
-            <label for="todo"> Get out of bed</label> </li> 
-        <li><input type="checkbox" name="todo" value="todo"> <span class="checkmark"></span>
-            <label for="todo">Get better in University</label></li>
-        <li><input type="checkbox" name="todo" value="todo"> <span class="checkmark"></span>
-            <label for="todo">Finishing Assignments</label></li>
+        <li><input type="checkbox">
+            <label>Get out of bed</label> <i class="fas fa-trash-alt icon"></i> </li> 
+        <li><input type="checkbox">
+            <label>Get better in University</label> <i class="fas fa-trash-alt icon"></i> </li>
+        <li><input type="checkbox">
+            <label>Finishing Assignments</label> <i class="fas fa-trash-alt icon"></i> </li>
     </ul>
 
 
@@ -37,7 +39,7 @@
 
 </div>
 
-   <!-- <label for="checkContainer"> <input type="checkbox" checked="checked"/> <span class="checkmark"></span> </label> -->
+   <!-- <label for="checkContainer"> <input type="checkbox" checked="checked"/> </label> -->
     
 </body>
 </html>
