@@ -15,14 +15,15 @@ taskInput.addEventListener("keyup", e => {
         newTasks.appendChild(newCheckbox);
         newTasks.appendChild(newlabel);
         newTasks.appendChild(newIcon);
+        taskInput.value = "";
         console.log(value);
     }
     else {
         return null;
     }
     function myTest() {
-        let list = document.getElementById("appList");
-        list.parentNode.removeChild(list);
+        var test = document.querySelector(".li");
+        test.style.display = "none";
     }
     document.querySelector(".icon").addEventListener("click", myTest);
 });

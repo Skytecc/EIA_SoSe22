@@ -24,7 +24,8 @@ taskInput.addEventListener("keyup", e => {
         newTasks.appendChild(newlabel);
         newTasks.appendChild(newIcon);
         
-        
+        taskInput.value = "";
+
         console.log(value);
 
     } else {
@@ -32,12 +33,12 @@ taskInput.addEventListener("keyup", e => {
     }
 
     function myTest() {
-        let list = document.getElementById("appList");
-        list.parentNode.removeChild(list);
+        var test = document.querySelector<HTMLElement>(".li");
+        test.style.display="none";
     }
 
  
-    document.querySelector(".icon").addEventListener("click", myTest )
+    document.querySelector(".icon").addEventListener("click", myTest);
 });
 
 
