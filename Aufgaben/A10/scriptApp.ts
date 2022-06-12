@@ -2,6 +2,7 @@ const taskInput = document.querySelector<HTMLInputElement>("#newInput");
 const trashCan = document.querySelector(".icon");
 var items = document.querySelectorAll("#appList li");
 var myList = document.querySelector("#appList");
+var number: number = 0;
 
 
 
@@ -18,6 +19,16 @@ taskInput.addEventListener("keyup", e => {
 
 
     if(e.key == "Enter" && value) {
+
+        number++;
+
+        function showNumber () {
+        
+            document.querySelector(".totalnumber").innerHTML = String(number);
+
+        }
+
+        showNumber();
 
         document.getElementById("appList").appendChild(newTasks);
         newTasks.appendChild(newCheckbox);
@@ -36,8 +47,17 @@ taskInput.addEventListener("keyup", e => {
         var test = document.querySelector<HTMLElement>(".li");
         test.style.display="none";
     }
+
+    function myTest02() {
+        var test02 = document.querySelector<HTMLElement>(".li");
+
+        myList.removeChild(newTasks);
+        number--;
+        showNumber();
+    }
+
  
-    document.querySelector(".icon").addEventListener("click", myTest);
+    document.querySelector(".icon").addEventListener("click", myTest02);
 });
 
 
