@@ -16,13 +16,13 @@ taskInput.addEventListener("keyup", e => {
         function showNumber() {
             document.querySelector(".totalnumber").innerHTML = String(number);
         }
-        showNumber();
         document.getElementById("appList").appendChild(newTasks);
         newTasks.appendChild(newCheckbox);
         newTasks.appendChild(newlabel);
         newTasks.appendChild(newIcon);
         taskInput.value = "";
         console.log(value);
+        showNumber();
     }
     else {
         return null;

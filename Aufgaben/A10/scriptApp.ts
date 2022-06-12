@@ -28,8 +28,6 @@ taskInput.addEventListener("keyup", e => {
 
         }
 
-        showNumber();
-
         document.getElementById("appList").appendChild(newTasks);
         newTasks.appendChild(newCheckbox);
         newTasks.appendChild(newlabel);
@@ -38,6 +36,7 @@ taskInput.addEventListener("keyup", e => {
         taskInput.value = "";
 
         console.log(value);
+        showNumber();
 
     } else {
         return null
