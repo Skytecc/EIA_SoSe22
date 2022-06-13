@@ -14,6 +14,7 @@ taskInput.addEventListener("keyup", e => {
     var newCheckbox = document.createElement("input");
     var newIcon = document.createElement("i")
     newIcon.classList.add("fas", "fa-trash-alt", "icon");
+    newIcon.addEventListener("click", myTest02);
     
     newCheckbox.setAttribute("type", "checkbox");
 
@@ -43,20 +44,20 @@ taskInput.addEventListener("keyup", e => {
     }
 
     function myTest() {
-        var test = document.querySelector<HTMLElement>(".li");
+        var test = document.querySelector<HTMLElement>("#appList li");
         test.style.display="none";
     }
 
     function myTest02() {
-        var test02 = document.querySelector<HTMLElement>(".li");
+        var test02 = document.querySelector<HTMLElement>("#appList li");
 
-        myList.removeChild(newTasks);
+        myList.removeChild(test02);
         number--;
         showNumber();
     }
 
  
-    document.querySelector(".icon").addEventListener("click", myTest02);
+    
 });
 
 

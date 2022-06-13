@@ -10,6 +10,7 @@ taskInput.addEventListener("keyup", e => {
     var newCheckbox = document.createElement("input");
     var newIcon = document.createElement("i");
     newIcon.classList.add("fas", "fa-trash-alt", "icon");
+    newIcon.addEventListener("click", myTest02);
     newCheckbox.setAttribute("type", "checkbox");
     if (e.key == "Enter" && value) {
         number++;
@@ -28,15 +29,14 @@ taskInput.addEventListener("keyup", e => {
         return null;
     }
     function myTest() {
-        var test = document.querySelector(".li");
+        var test = document.querySelector("#appList li");
         test.style.display = "none";
     }
     function myTest02() {
-        var test02 = document.querySelector(".li");
-        myList.removeChild(newTasks);
+        var test02 = document.querySelector("#appList li");
+        myList.removeChild(test02);
         number--;
         showNumber();
     }
-    document.querySelector(".icon").addEventListener("click", myTest02);
 });
 //# sourceMappingURL=scriptApp.js.map
